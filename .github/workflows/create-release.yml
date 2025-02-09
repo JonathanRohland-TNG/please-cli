@@ -26,7 +26,7 @@ jobs:
 
       - name: Build package
         run: |
-          export TAG="${{ github.ref }}"
+          export TAG="1.2.3"
           export VERSION=$(echo "${TAG}" | sed 's/^refs\/tags\/v//')
           mkdir please
           cd please
