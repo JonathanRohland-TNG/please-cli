@@ -44,5 +44,6 @@ jobs:
           cd ..
           dpkg-deb --build please
           debsigs --sign=origin please.deb
+          debsigs --list please.deb
 
 
